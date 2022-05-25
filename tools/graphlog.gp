@@ -26,6 +26,6 @@ ScaleDiversity(d)= d
 ScaleMurders(m) = m #required for plotting the newly enabled kill action
 
 plot "./logs/epoch-log.txt" using 1:(ScaleSurvivors($2)) with lines lw 2 linecolor 2 title "Survivors", \
-    "" using 1:(ScaleMurders($5)) with lines lw 2 linecolor 4 title "Murders", \ # plots Murderes as a yellow line sharing left y-axis with Survivors
+    "" using 1:(ScaleMurders($5)) with lines lw 2 linecolor 4 title "Murders", \
     "" using 1:(ScaleDiversity($3)) with lines lw 2 linecolor 1 title "Diversity" axes x1y2
 
