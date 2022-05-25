@@ -41,7 +41,7 @@ void ParamManager::setDefaults()
     privParams.pointMutationRate = 0.001;
     privParams.geneInsertionDeletionRate = 0.0;
     privParams.deletionRatio = 0.5;
-    privParams.killEnable = false;
+    privParams.killEnable = true; //because that is the whole point of this fork
     privParams.sexualReproduction = true;
     privParams.chooseParentsByFitness = true;
     privParams.populationSensorRadius = 2.5;
